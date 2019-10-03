@@ -73,11 +73,7 @@ describe('GET /user', function (done) {
             .send(validCreds)
             .then((res) => {
                 //assertions
-<<<<<<< HEAD
-=======
-                this.timeout(500);
                 setTimeout(done, 300);
->>>>>>> ce03ff02ed458b77dcbd1d6a0400c2cf5650bada
                 expect(res).to.have.status(204);
             }).catch(err => {
                 done(err);
